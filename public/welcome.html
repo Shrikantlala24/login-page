@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Secure Auth System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card">
+            <div class="welcome-header">
+                <h1>Welcome, <span id="username">User</span>!</h1>
+                <p>You have successfully logged into your secure account.</p>
+            </div>
+            
+            <div class="welcome-content">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>🔒 Secure Login</h3>
+                        <p>Your password is encrypted and stored securely</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>⚡ Fast Access</h3>
+                        <p>Quick authentication with session management</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🛡️ Protected</h3>
+                        <p>Advanced security measures protect your data</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>📱 Responsive</h3>
+                        <p>Works perfectly on all devices</p>
+                    </div>
+                </div>
+                
+                <div class="user-info">
+                    <h3>Account Information</h3>
+                    <p><strong>Username:</strong> <span id="userInfo">Loading...</span></p>
+                    <p><strong>Status:</strong> <span class="status-active">Active</span></p>
+                    <p><strong>Session:</strong> <span class="status-secure">Secure</span></p>
+                </div>
+            </div>
+            
+            <div class="welcome-actions">
+                <button id="logoutBtn" class="btn btn-secondary">
+                    <span class="btn-text">Logout</span>
+                    <span class="btn-loading" style="display: none;">Logging out...</span>
+                </button>
+            </div>
+            
+            <div id="message" class="message" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <script src="welcome.js"></script>
+</body>
+</html>
